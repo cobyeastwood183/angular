@@ -3,10 +3,8 @@ import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 import * as Sentry from "@sentry/angular";
 
-const MY_DSN = "";
-
 Sentry.init({
-  dsn: MY_DSN,
+  dsn: "https://d2ac2af5578e35d63e414f35af1f11c3@o4508337845829632.ingest.us.sentry.io/4508719089057792",
   integrations: [
     Sentry.browserTracingIntegration(),
     Sentry.replayIntegration(),
